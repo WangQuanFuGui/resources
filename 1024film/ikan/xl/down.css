@@ -1,0 +1,40 @@
+/* downpage */
+#downlist {padding: 0.5rem 0;border-bottom: 1px solid #f1f1f1;}
+.down_title span {padding: 0 0.125rem;background: #1890ff;font-size: 0.3rem;color: #fff;border-radius: 4px;line-height: 0.525rem;margin: 0.05rem 0;}
+.down_title .title{margin-right: 0.25rem;}
+.down_tips_text {text-align: center;background: #f8f8f8;padding: 1rem 0.25rem;border-radius: 4px;margin: 0;}
+.down_vodl {width: 1.35rem;float: left;margin-right: 0.4rem;}
+.down_vodl .vodlist_thumb{padding-top: 0;height: 1.875rem;}
+.down_vodr {float: left;width: calc(100% - 1.75rem);}
+.down_context a{color:#666;}
+.style-input{float: left; display: block; width: 0.3rem; height: 0.3rem; border: 1px solid #aaa;margin: 0.15rem 0.15rem 0px 0.025rem;border-radius: 2px;}
+.style-input:checked{background: url(../img/checked.png) no-repeat #ff5f00;background-size: cover; border: 1px solid #ff5f00;}
+.down_list{margin-top: 0.25rem;clear: both;}
+.down_list ul{zoom: 1;overflow: hidden;margin-bottom: 0.2rem;}
+.down_list ul li{padding: 0.25rem 0;overflow: hidden;vertical-align: middle;line-height: 0.6rem;font-size: 0.35rem;border-bottom: 1px solid #f1f1f1;}
+.down_list ul li p{float: left;display: inline;overflow: hidden;}
+.down_list ul li span{float: right;display: inline;overflow: hidden;color: #ff5f00;}
+.down_list ul li span.filename{text-overflow: ellipsis; -o-text-overflow: ellipsis; white-space: nowrap; text-align: center;}
+.down_list ul li span label,.down_list ul li span a.btnd{float: left;display: inline;margin-left: 0.25rem;padding: 0.15rem 0.225rem;color: #fff;line-height: 1;cursor: pointer}
+.down_list ul li span label a{color: #fff;}
+.down_part_name{font-weight: 400;margin-right: 0.25rem;float: left;display: inline;line-height: 0.65rem;}
+.down_part_name a{color: #00be06;}
+.thunder_url{border: solid 1px #e4e4e4; background: #f8f8f8; color: #999;height: 0.65rem;line-height: 0.55rem;padding: 0 0.125rem;overflow: hidden;text-overflow: ellipsis}
+.thunder_down{background: #1890ff;}
+.xiaomi{background: #ff6628}
+.kk{background: #00be06}
+.btn_bd{background: #999}
+.downtools{padding: 0.125rem 0;overflow: hidden;zoom: 1;font-size: 0.35rem;}
+.downtools input{margin: 0.2rem 0.025rem 0;padding: 0;float: left;display: inline}
+.downtools em{padding: 0 0.125rem;float: left;font-style: normal;line-height: 0.7rem;}
+.downtools a{display: inline-block;margin-left: 0.25rem;line-height: 0.7rem;overflow: hidden;text-align: center;}
+
+.actor_vlist li{float: left;margin-right: 0.5rem;padding-top: 0.2rem;}
+.actor_part{width: 3rem; float: left; display: block; overflow: hidden; padding: 0.1rem; background: #f8f8f8; border-radius: 50px; border: 1px solid #f1f1f1;}
+a.actor_part:hover{color: #fff; background: #ff5f00;border: 1px solid #ff5f00;}
+.actor_pic{position: relative; display: block; width: 1rem; height: 1rem;float: left;background: #ebebeb; background-position: 50% 50%; background-size: cover; border-radius: 100%; overflow: hidden;}
+.actor_name{text-align: center; padding-top: 0.275rem; padding-left: 0.05rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 0.375rem;}
+.actorlist_item {position: relative;float: left;padding: 0.125rem;margin: 0.125rem 0;width: 12.5%;}
+.actorlist_tit {display: block;overflow: hidden;font-size: 0.375rem;margin-top: 0.25rem;text-overflow: ellipsis;white-space: nowrap;text-align: center;}
+.actor_hom .vodlist_thumb {padding-top: 100%;border-radius: 100%;border: 1px solid #f8f8f8;}
+.actor_hom .vodlist_titbox{height: auto;text-align: center;}
