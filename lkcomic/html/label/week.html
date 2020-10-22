@@ -1,0 +1,36 @@
+<?php include ('template/b/admin/yzm.config.php'); ?>
+        						       <div class="column-lft">
+         						          <div class="sort_nav ">
+       						                 <h3 class="sort_nav_tit"><i class="icon icon_t icon-dvbox"></i><span>新番节目表</span></h3>
+               						         <div class="tab-title" id="mytabsweek">
+									<li class="item"><a href="javascript:void(0);" >最新</a></li>
+									<li class="item {if condition="date('w') eq 1"}item-cur{/if}"><a href="javascript:void(0);" >{if condition="date('w') eq 1"}今天{else /}一{/if}</a></li>
+									<li class="item {if condition="date('w') eq 2"}item-cur{/if}"><a href="javascript:void(0);" >{if condition="date('w') eq 2"}今天{else /}二{/if}</a></li>
+									<li class="item {if condition="date('w') eq 3"}item-cur{/if}"><a href="javascript:void(0);" >{if condition="date('w') eq 3"}今天{else /}三{/if}</a></li>
+									<li class="item {if condition="date('w') eq 4"}item-cur{/if}"><a href="javascript:void(0);" >{if condition="date('w') eq 4"}今天{else /}四{/if}</a></li>
+									<li class="item {if condition="date('w') eq 5"}item-cur{/if}"><a href="javascript:void(0);" >{if condition="date('w') eq 5"}今天{else /}五{/if}</a></li>
+									<li class="item {if condition="date('w') eq 6"}item-cur{/if}"><a href="javascript:void(0);" >{if condition="date('w') eq 6"}今天{else /}六{/if}</a></li>
+									<li class="item {if condition="date('w') eq 0"}item-cur{/if}"><a href="javascript:void(0);" >{if condition="date('w') eq 0"}今天{else /}日{/if}</a></li>
+									</div>				    
+               						         <div class="tab-cont" id="mytabweek">
+							   		<li class="item"><ul class="tab-content">
+									{maccms:vod num="12" type="4" order="desc" by="time"}{include file="list/fjlist"}{/maccms:vod}</ul></li>
+									<li class="item {if condition="date('w') eq 1"}cur{/if}"><ul class="tab-content">
+									{maccms:vod num="12" type="all" by="time" order="desc" weekday="一"}{include file="list/fjlist"}{/maccms:vod}</ul></li>
+									<li class="item {if condition="date('w') eq 2"}cur{/if}"><ul class="tab-content">
+									{maccms:vod num="12" type="all" by="time" order="desc" weekday="二"}{include file="list/fjlist"}{/maccms:vod}</ul></li>
+									<li class="item {if condition="date('w') eq 3"}cur{/if}"><ul class="tab-content">
+									{maccms:vod num="12" type="all" by="time" order="desc" weekday="三"}{include file="list/fjlist"}{/maccms:vod}</ul></li>
+									<li class="item {if condition="date('w') eq 4"}cur{/if}"><ul class="tab-content">
+									{maccms:vod num="12" type="all" by="time" order="desc" weekday="四"}{include file="list/fjlist"}{/maccms:vod}</ul></li>
+									<li class="item {if condition="date('w') eq 5"}cur{/if}"><ul class="tab-content">
+									{maccms:vod num="12" type="all" by="time" order="desc" weekday="五"}{include file="list/fjlist"}{/maccms:vod}</ul></li>
+									<li class="item {if condition="date('w') eq 6"}cur{/if}"><ul class="tab-content">
+									{maccms:vod num="12" type="all" by="time" order="desc" weekday="六"}{include file="list/fjlist"}{/maccms:vod}</ul></li>
+									<li class="item {if condition="date('w') eq 0"}cur{/if}"><ul class="tab-content">
+									{maccms:vod num="12" type="all" by="time" order="desc" weekday="日"}{include file="list/fjlist"}{/maccms:vod}</ul></li>
+						    </div>                       
+                    </div><script type="text/javascript">var script=["cur", "removeClass", "siblings", "addClass", "index", "eq", "#mytabweek .item", "item-cur", "#mytabsweek .item", "click"];$(function(){$("#mytabsweek .item")["click"](function(){$("#mytabweek .item")["eq"]($(this)["index"]())["addClass"]("cur")["siblings"]()["removeClass"]("cur");$("#mytabsweek .item")["eq"]($(this)["index"]())["addClass"]("item-cur")["siblings"]()["removeClass"]("item-cur")})})</script>
+
+	</div>
+
