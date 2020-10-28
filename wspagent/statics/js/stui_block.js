@@ -111,7 +111,7 @@ var stui = {
 			});
 		},
 		'qrcode': function() {
-			$("img.qrcode").attr("src", "https://sapi.k780.com/?app=qr.get&data=" + encodeURIComponent(stui.browser.url) + "")
+			$("img.qrcode").attr("src", "https://api.66mz8.com/api/qr.php?text=" + encodeURIComponent(stui.browser.url) + "")
 		}
 	},
 	'common': {//公共基础
