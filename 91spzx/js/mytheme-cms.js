@@ -56,7 +56,7 @@ var Myui = {
             });
 		},
 		'Show':function($page){
-			MyTheme.Ajax(maccms.path + '/index.php/comment/ajax.html?rid='+$('.myui_comment').attr('data-id')+'&mid='+ $('.myui_comment').attr('data-mid') +'&page='+$page,'get','json','',function(r){
+			MyTheme.Ajax(maccms.path + '/index.php/comment/ajax.html?rid='+$('.myui_comment').attr('data-id')+'&mid='+ $('.myui_comment').attr('data-mid') +'&page='+$page,'post','','',function(r){
 			    $(".myui_comment").html(r);
 			},function(){
 			    $(".myui_comment").html('<p class="text-center"><a href="javascript:void(0)" onclick="Myui.Comment.Show('+$page+');">评论加载失败，点击我刷新...</a></p>');
